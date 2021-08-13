@@ -15,4 +15,4 @@ Or if you are using Windows.
 
 ``` g++ main.cpp main.exe ```
 
-And execute it in terminal, It is possible to use it as a tool since the text is 100% copyable. 
+And execute it in terminal, It is possible to use it as a tool since the text is 100% copyable.
