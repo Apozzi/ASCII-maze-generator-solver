@@ -91,7 +91,7 @@ class Graph {
 		Busca em largura (BFS) (Resolução do labirinto)
 		Obs.: Se a distancia fosse relativa seria possivel utilizar dijkstra
 	*/
-	std::list<Vertex<T>*> breadthSearchPath(Vertex<T>* objectiveVertex) {
+    std::list<Vertex<T>*> breadthSearchPath(Vertex<T>* objectiveVertex) {
       std::list<Vertex<T>*> queue;
       Vertex<T>* initialVertex = vertexes.front();
       queue.push_front(initialVertex);
@@ -174,7 +174,7 @@ class Graph {
       }
     }
 	
-	void resetVertex() {
+    void resetVertex() {
       auto itr = vertexes.begin();
       Vertex<T>* ver = nullptr;
       while(itr != vertexes.end()) {
