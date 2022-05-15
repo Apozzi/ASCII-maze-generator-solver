@@ -87,10 +87,10 @@ class Graph {
         return newGraph;
     }
 	
-	/*
-		Busca em largura (BFS) (Resolução do labirinto)
-		Obs.: Se a distancia fosse relativa seria possivel utilizar dijkstra
-	*/
+    /*
+      Busca em largura (BFS) (Resolução do labirinto)
+      Obs.: Se a distancia fosse relativa seria possivel utilizar dijkstra
+    */
     std::list<Vertex<T>*> breadthSearchPath(Vertex<T>* objectiveVertex) {
       std::list<Vertex<T>*> queue;
       Vertex<T>* initialVertex = vertexes.front();
@@ -123,22 +123,22 @@ class Graph {
     }
 
     private:
-	/*
-		Pega o roteamente de cada node pré-calculado
-	*/
-	std::list<Vertex<T>*> getPathList(Vertex<T>* objectiveVertex) {
-		std::list<Vertex<T>*> pathList;
-		Vertex<T>* vvt = objectiveVertex;
-		while (vvt != nullptr) {
-			pathList.push_back(vvt);
-			vvt = vvt->getVectorVertex();
-		}
-		return pathList;
-	}
+    /*
+       Pega o roteamente de cada node pré-calculado
+    */
+    std::list<Vertex<T>*> getPathList(Vertex<T>* objectiveVertex) {
+    	std::list<Vertex<T>*> pathList;
+    	Vertex<T>* vvt = objectiveVertex;
+    	while (vvt != nullptr) {
+    		pathList.push_back(vvt);
+    		vvt = vvt->getVectorVertex();
+    	}
+    	return pathList;
+    }
 	
-	/*
-		Função recursiva da (DFS)
-	*/
+    /*
+       Função recursiva da (DFS)
+    */
     void depthSearchRecursivity(Vertex<T>* ve, Graph<T, T2>* g) {
         ve->checkVisited(true);
         std::list<Vertex<T>*> vertexEdges = ve->getEdges();
