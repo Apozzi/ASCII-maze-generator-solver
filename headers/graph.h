@@ -75,9 +75,9 @@ class Graph {
       return nullptr;
     }
 
-	/*
-		Busca em profundidade (DFS) (Criação do labirinto)
-	*/
+    /*
+       Busca em profundidade (DFS) (Criação do labirinto)
+    */
     Graph<T, T2>* depthSearchTree() {
         Graph<T, T2>* newGraph = new Graph<T, T2>();
         copyVertex(newGraph);
