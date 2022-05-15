@@ -20,11 +20,11 @@ class CharacterMap {
       character = ch;
     }
 	
-	void setColor(int cor) {
+    void setColor(int cor) {
       color = cor;
     }
 	
-	int getColor() {
+    int getColor() {
       return color;
     }
 
